@@ -1,0 +1,84 @@
+*{
+  background-color:aliceblue;
+  margin-left: 10px;
+  /* text-align: center; */
+}
+
+.main
+{
+  font-family: 'Bungee Shade', cursive;
+}
+
+
+.App .title-block
+{
+  /* position: absolute; */
+  display: inline-block;
+  /* background-color: darkgrey; */
+}
+
+.App .title-block .name
+{
+  position: relative;
+  display: 'inline-block';
+  font-size: 40px;
+  float: left;
+}
+
+.App .title-block .metamask-button
+{
+  position: relative;
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 30px;
+  margin-left: 650px;
+  background-color:dodgerblue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: medium;
+}
+
+.App .main-menu
+{
+  display: block;
+}
+
+.App .main-menu .participate-button
+{
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  background-color:lightblue;
+  color: blue;
+  border-radius: 2px;
+  padding: 12px;
+  font-size: large;
+  border: none;
+}
+
+.App .main-menu .getResult-button
+{
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  background-color:rgb(160, 211, 174);
+  color: green;
+  border-radius: 2px;
+  padding: 12px;
+  font-size: large;
+  border: none;
+}
+
+.App .main-menu .newManager-button
+{
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  background-color:rgb(235, 225, 171);
+  color: rgb(134, 87, 5);
+  border-radius: 2px;
+  padding: 12px;
+  font-size: large;
+  border: none;
+}
