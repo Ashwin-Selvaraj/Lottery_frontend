@@ -1,84 +1,81 @@
-*{
-  background-color:aliceblue;
-  margin-left: 10px;
-  /* text-align: center; */
+* {
+  background-color: aliceblue;
+  margin-left: 1%;
 }
 
-.main
-{
+.main {
   font-family: 'Bungee Shade', cursive;
 }
 
-
-.App .title-block
-{
-  /* position: absolute; */
-  display: inline-block;
-  /* background-color: darkgrey; */
+.App .title-block {
+  display: flex;
+  align-items: center;
 }
 
-.App .title-block .name
-{
-  position: relative;
-  display: 'inline-block';
-  font-size: 40px;
-  float: left;
+.App .title-block .name {
+  font-size: 2em;
+  margin-right: auto; /* Push the "name" to the left */
 }
 
-.App .title-block .metamask-button
-{
-  position: relative;
-  display: inline-block;
-  margin-top: 35px;
-  margin-right: 30px;
-  margin-left: 650px;
-  background-color:dodgerblue;
+.App .title-block .metamask-button {
+  margin-left: auto; /* Push the "Connect Wallet" button to the right */
+  background-color: dodgerblue;
   color: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0.5em 1em;
   font-size: medium;
+  margin-right: 20px;
 }
 
-.App .main-menu
-{
+.App .main-menu {
   display: block;
 }
 
-.App .main-menu .participate-button
-{
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
-  background-color:lightblue;
+.App .main-menu .participate-button,
+.App .main-menu .getResult-button,
+.App .main-menu .newManager-button {
+  margin-right: 2.5%;
+  border-radius: 2px;
+  padding: 1em 2em;
+  font-size: large;
+  border: none;
+}
+
+.App .main-menu .participate-button {
+  background-color: lightblue;
   color: blue;
-  border-radius: 2px;
-  padding: 12px;
-  font-size: large;
-  border: none;
 }
 
-.App .main-menu .getResult-button
-{
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
-  background-color:rgb(160, 211, 174);
+.App .main-menu .getResult-button {
+  background-color: rgb(160, 211, 174);
   color: green;
-  border-radius: 2px;
-  padding: 12px;
-  font-size: large;
-  border: none;
 }
 
-.App .main-menu .newManager-button
-{
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
-  background-color:rgb(235, 225, 171);
+.App .main-menu .newManager-button {
+  background-color: rgb(235, 225, 171);
   color: rgb(134, 87, 5);
-  border-radius: 2px;
-  padding: 12px;
-  font-size: large;
-  border: none;
+}
+
+.ParticipantList {
+  margin-left: auto; /* Push the ParticipantList to the right */
+  margin-top: 1em; /* Add some space between Connect Wallet and ParticipantList */
+  
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .App .title-block {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  .App .title-block .metamask-button {
+    margin-left: 0; /* Reset margin on small screens */
+    margin-top: 1em; /* Add some space between items on small screens */
+  }
+  .ParticipantList {
+    margin-left: 0; /* Reset margin on small screens */
+    margin-top: 1em; /* Add some space on small screens */
+  }
 }
